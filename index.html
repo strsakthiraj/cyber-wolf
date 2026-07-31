@@ -1,250 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SympoFlow CRM</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SympoFlow CRM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
-
-
 <body>
 
-
-<header>
-
-<div class="logo">
-<i class="fa-solid fa-graduation-cap"></i>
-<h2>SympoFlow</h2>
-</div>
-
-
-<nav>
-<a href="#">Home</a>
-<a href="#register">Register</a>
-<a href="#dashboard">Dashboard</a>
-</nav>
-
-
-</header>
-
-
-
-<section class="hero">
-
-
-<div>
-
-<h1>
-Smart Symposium Registration CRM
-</h1>
-
-<p>
-Manage participants, track registrations and organize symposium data easily.
-</p>
-
-<a href="#register" class="btn">
-Register Now
-</a>
-
-
-</div>
-
-
-<i class="fa-solid fa-users-viewfinder hero-icon"></i>
-
-
-</section>
-
-
-
-
-<section id="dashboard" class="dashboard">
-
-
-<h2>Dashboard</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<i class="fa-solid fa-users"></i>
-
-<h3 id="total">
-0
-</h3>
-
-<p>Total Participants</p>
-
-</div>
-
-
-
-<div class="card">
-
-<i class="fa-solid fa-calendar"></i>
-
-<h3 id="today">
-0
-</h3>
-
-<p>Registrations</p>
-
-</div>
-
-
-
-<div class="card">
-
-<i class="fa-solid fa-check"></i>
-
-<h3>
-100%
-</h3>
-
-<p>Success</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-<section id="register" class="register">
-
-
-<h2>
-Participant Registration
-</h2>
-
-
-<form id="form">
-
-
-<input id="name" placeholder="Full Name" required>
-
-
-<input id="email" type="email" placeholder="Email" required>
-
-
-<input id="phone" placeholder="Phone Number" required>
-
-
-<input id="college" placeholder="College Name" required>
-
-
-<input id="department" placeholder="Department" required>
-
-
-
-<select id="year">
-
-<option>1st Year</option>
-
-<option>2nd Year</option>
-
-<option>3rd Year</option>
-
-<option>4th Year</option>
-
-</select>
-
-
-
-<button>
-<i class="fa-solid fa-paper-plane"></i>
-Register
-</button>
-
-
-</form>
-
-
-</section>
-
-
-
-
-
-<section class="participants">
-
-
-<h2>
-Participants List
-</h2>
-
-
-<input id="search"
-placeholder="Search participant...">
-
-
-<table>
-
-
-<thead>
-
-<tr>
-
-<th>Name</th>
-<th>Email</th>
-<th>College</th>
-<th>Year</th>
-<th>Action</th>
-
-</tr>
-
-</thead>
-
-
-<tbody id="table">
-
-</tbody>
-
-
-</table>
-
-
-
-</section>
-
-
-
-
-
-<div id="toast"></div>
-
-
-
-<footer>
-
-<p>
-© 2026 SympoFlow | Hackathon Project
-</p>
-
-</footer>
-
-
-
-<script src="script.js"></script>
-
-
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>SympoFlow</h2>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#register">Register</a>
+            <a href="#dashboard">Dashboard</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Smart Symposium Registration CRM</h1>
+            <p>Manage participants, track registrations and organize symposium data easily.</p>
+            <a href="#register" class="btn">Register Now</a>
+        </div>
+        <i class="fa-solid fa-users-viewfinder hero-icon"></i>
+    </section>
+
+    <section id="dashboard" class="dashboard">
+        <h2>Dashboard</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <h3 id="total">0</h3>
+                <p>Total Participants</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-calendar"></i>
+                <h3 id="today">0</h3>
+                <p>Registrations</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-check"></i>
+                <h3>100%</h3>
+                <p>Success</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="register">
+        <h2>Participant Registration</h2>
+        <form id="form">
+            <input id="name" placeholder="Full Name" required>
+            <input id="email" type="email" placeholder="Email" required>
+            <input id="phone" placeholder="Phone Number" required>
+            <input id="college" placeholder="College Name" required>
+            <input id="department" placeholder="Department" required>
+            <select id="year">
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+            <button type="submit" id="submitBtn">
+                <i class="fa-solid fa-paper-plane"></i> Register
+            </button>
+        </form>
+    </section>
+
+    <section class="participants">
+        <h2>Participants List</h2>
+        <input id="search" placeholder="Search participant...">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>College</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <!-- Data populated dynamically via JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+  <div id="toast"></div>
+
+  <!-- Q&A Floating Accordion Widget -->
+    <div class="qa-widget" id="qaWidget">
+        <!-- Floating trigger button -->
+        <button class="qa-toggle-btn" onclick="toggleQAWidget()">
+            <i class="fa-solid fa-circle-question"></i>
+        </button>
+        
+        <!-- Expanded panel structure -->
+        <div class="qa-container">
+            <div class="qa-header">
+                <h3><i class="fa-solid fa-comments"></i> Frequently Asked Questions</h3>
+                <button class="qa-close-btn" onclick="toggleQAWidget()">&times;</button>
+            </div>
+            <div class="qa-content" id="qaContent">
+                <!-- Data populated dynamically via script.js -->
+                <div class="loading-span">Loading questions...</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <!-- Add this line just above your footer -->
+<div id="modalOverlay" class="modal-overlay"></div>
+        <p>© 2026 SympoFlow | Hackathon Project</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
